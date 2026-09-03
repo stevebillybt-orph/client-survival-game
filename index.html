@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#f3efe4" />
-  <title>Still On The Account?</title>
+  <title>個客仲喺度？</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
@@ -13,18 +13,18 @@
 <body>
   <main class="shell">
     <section id="start" class="screen active">
-      <div class="eyebrow">AGENCY × CLIENT SURVIVAL SIMULATOR</div>
-      <div class="hero-stamp">CLIENT<br>FEEDBACK</div>
-      <h1>ARE YOU STILL<br>ON THE ACCOUNT?</h1>
-      <p class="lede">Ten client comments. Twelve seconds each. One wrong sentence can turn “small revision” into “thanks for all your support.”</p>
-      <button id="startBtn" class="primary">ENTER THE MEETING →</button>
-      <p class="micro">No login. No deck. No procurement. Yet.</p>
+      <div class="eyebrow">廣告公司 × 客戶 求生遊戲</div>
+      <div class="hero-stamp">客戶<br>話要改</div>
+      <h1>個客仲喺度？</h1>
+      <p class="lede">十句客戶 feedback。每題得十二秒。一句答錯，本身只係「改少少」，轉個頭就變成「多謝你哋一直以來嘅支持。」</p>
+      <button id="startBtn" class="primary">開始開會 →</button>
+      <p class="micro">唔使 login。未使交 deck。採購部仲未殺到。</p>
     </section>
 
     <section id="game" class="screen">
       <header class="topbar">
         <div>
-          <div class="label">ACCOUNT RISK</div>
+          <div class="label">個客流失指數</div>
           <div class="meter-wrap"><div id="riskBar" class="meter"></div></div>
         </div>
         <div class="risk-number"><span id="riskValue">50</span><small>/100</small></div>
@@ -32,13 +32,13 @@
 
       <div class="game-meta">
         <span id="progress">01 / 10</span>
-        <span id="timer">12s</span>
+        <span id="timer">12秒</span>
       </div>
 
       <article class="message-card">
-        <div class="avatar">C</div>
+        <div class="avatar">客</div>
         <div>
-          <div class="speaker">CLIENT</div>
+          <div class="speaker">客戶</div>
           <p id="questionText"></p>
         </div>
       </article>
@@ -49,27 +49,27 @@
         <div id="feedbackTag" class="feedback-tag"></div>
         <h2 id="feedbackTitle"></h2>
         <p id="feedbackText"></p>
-        <button id="nextBtn" class="primary">NEXT COMMENT →</button>
+        <button id="nextBtn" class="primary">下一句 feedback →</button>
       </div>
 
-      <button id="recallBtn" class="recall">↶ RECALL MESSAGE <span>1 LEFT</span></button>
+      <button id="recallBtn" class="recall">↶ 撤回訊息 <span>仲有 1 次</span></button>
     </section>
 
     <section id="result" class="screen">
-      <div class="eyebrow">MEETING ENDED</div>
+      <div class="eyebrow">會議完結</div>
       <div id="resultRisk" class="result-score">38</div>
-      <div class="label center">FINAL ACCOUNT RISK</div>
-      <h1 id="resultTitle">SAFE FOR<br>ANOTHER CAMPAIGN</h1>
+      <div class="label center">最終個客流失指數</div>
+      <h1 id="resultTitle">安全過骨</h1>
       <p id="resultText" class="lede"></p>
       <div id="quote" class="client-quote"></div>
       <div class="button-row">
-        <button id="restartBtn" class="primary">PLAY AGAIN →</button>
-        <button id="copyBtn" class="secondary">COPY RESULT</button>
+        <button id="restartBtn" class="primary">再玩多次 →</button>
+        <button id="copyBtn" class="secondary">複製結果</button>
       </div>
     </section>
   </main>
 
-  <footer>MADE FOR PEOPLE WHO HAVE HEARD “CAN YOU MAKE IT POP?”</footer>
+  <footer>獻畀每一個都聽過「可唔可以再 pop 啲？」嘅廣告人</footer>
   <script src="app.js"></script>
 </body>
 </html>
